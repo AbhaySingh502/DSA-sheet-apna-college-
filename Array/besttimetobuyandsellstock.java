@@ -2,7 +2,7 @@ package Hackerrank;
 
 import java.util.*;
 
-public class arrray {
+public class besttimetobuyandsellstock {
     public int printStock(int[] arr, int n) {
         int max = arr[0];
         int min = arr[0];
