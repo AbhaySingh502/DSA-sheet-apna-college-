@@ -1,4 +1,3 @@
-package Hackerrank;
 
 import java.util.*;
 
