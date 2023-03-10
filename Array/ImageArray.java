@@ -15,7 +15,6 @@ public class ImageArray {
             for (int j = 0; j < arr.length; j++) {
                 System.out.print(m[i][j]);
             }
-            // System.out.println();
         }
 
     }
