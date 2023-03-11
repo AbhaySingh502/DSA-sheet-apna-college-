@@ -1,4 +1,4 @@
-import java.lang.Thread.Builder;
+import java.util.*;
 
 public class recursion {
     static class Node {
@@ -40,6 +40,16 @@ public class recursion {
         return (ln + rn + 1);
     }
 
+    public static int sum(Node root) {
+        if (root == null) {
+            return 0;
+        }
+        int leftsum = sum(root.left);
+        int rightsum = sum(root.right);
+
+        return (leftsum + rightsum);
+    }
+
     public static void main(String[] args) {
         // int n[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
         Node root = new Node(1);
@@ -50,7 +60,8 @@ public class recursion {
         root.right.left = new Node(6);
         root.left.right = new Node(7);
 
-        System.out.println(nofn(root));
+        // System.out.println(nofn(root));
+        System.out.println(sum(root));
     }
 
 }

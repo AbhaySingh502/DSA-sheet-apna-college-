@@ -8,6 +8,19 @@ public class reverseLinkedList {
             System.out.println(m.get(i));
         }
     }
+    // from scratch...
+    // public ListNode reverseList(ListNode head) {
+    // ListNode currnode = head;
+    // ListNode prv = null;
+    // while(currnode!= null){
+    // ListNode forward = currnode.next;
+    // currnode.next = prv;
+    // prv = currnode;
+    // currnode = forward;
+
+    // }
+    // return prv;
+    // }
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
