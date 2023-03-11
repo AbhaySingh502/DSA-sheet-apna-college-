@@ -1,4 +1,3 @@
-package Array;
 
 import java.util.*;
 
@@ -47,5 +46,6 @@ public class kthmissing {
             arr[i] = sc.nextInt();
         }
         findKthPositive(arr, k);
+        sc.close();
     }
 }

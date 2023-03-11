@@ -35,7 +35,8 @@ public class MaximumReapetingNumber {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        MaximumReapetingNumber m = new MaximumReapetingNumber();
-        System.out.println("max oucrring elemnt is: " + m.findMax(arr));
+        System.out.println("max oucrring elemnt is: " + findMax(arr));
+
+        sc.close();
     }
 }

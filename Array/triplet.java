@@ -1,4 +1,3 @@
-package Array;
 
 import java.util.*;
 
@@ -59,6 +58,6 @@ public class triplet {
             arr[i] = sc.nextInt();
         }
         triplets(arr);
-
+        sc.close();
     }
 }

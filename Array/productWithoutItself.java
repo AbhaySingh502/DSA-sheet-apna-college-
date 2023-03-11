@@ -1,6 +1,4 @@
-package Array;
 
-import java.util.ArrayList;
 import java.util.*;
 
 public class productWithoutItself {
@@ -31,6 +29,7 @@ public class productWithoutItself {
         }
 
         product(arr);
+        sc.close();
     }
 
 }

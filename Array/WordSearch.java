@@ -1,4 +1,3 @@
-package Array;
 
 import java.util.*;
 
@@ -6,7 +5,6 @@ public class WordSearch {
     public static void exist(char[][] board, String word) {
         // char c[] = new char[word.length()];
 
-        boolean m = false;
         // for (int i = 0; i < word.length(); i++) {
         // }
         int count = 0;
@@ -46,6 +44,7 @@ public class WordSearch {
         // }
 
         exist(arr, word);
+        sc.close();
     }
 
 }

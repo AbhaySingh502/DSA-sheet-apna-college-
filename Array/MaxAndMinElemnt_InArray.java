@@ -1,4 +1,3 @@
-package Array;
 
 import java.util.*;
 
@@ -22,5 +21,6 @@ public class MaxAndMinElemnt_InArray {
             }
         }
         System.out.println(max + " " + min);
+        sc.close();
     }
 }

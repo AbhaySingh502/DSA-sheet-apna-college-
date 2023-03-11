@@ -31,6 +31,6 @@ public class choseKarrayElement {
             }
         }
         System.out.println("Minimum diffrence in an array: " + (max - min));
-
+        sc.close();
     }
 }

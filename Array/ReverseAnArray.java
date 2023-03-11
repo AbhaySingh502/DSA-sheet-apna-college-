@@ -1,4 +1,3 @@
-package Array;
 
 import java.util.*;
 
@@ -14,6 +13,6 @@ public class ReverseAnArray {
         for (int j = n - 1; j >= 0; j--) {
             System.out.println(arr[j]);
         }
-
+        sc.close();
     }
 }

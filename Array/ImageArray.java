@@ -1,4 +1,3 @@
-package Array;
 
 import java.util.*;
 
@@ -32,5 +31,7 @@ public class ImageArray {
         }
 
         rotate(arr);
+
+        sc.close();
     }
 }

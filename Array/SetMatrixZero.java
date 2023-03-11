@@ -1,4 +1,3 @@
-package Array;
 
 import java.util.*;
 
@@ -44,6 +43,6 @@ public class SetMatrixZero {
             }
         }
         Zeroes(arr);
-
+        sc.close();
     }
 }

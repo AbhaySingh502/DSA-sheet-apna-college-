@@ -1,4 +1,3 @@
-package Array;
 
 import java.util.*;
 
@@ -24,6 +23,8 @@ public class ContainsDuplicate {
         }
         ContainsDuplicate m = new ContainsDuplicate();
         System.out.println(m.search(arr, target));
+
+        sc.close();
 
     }
 }

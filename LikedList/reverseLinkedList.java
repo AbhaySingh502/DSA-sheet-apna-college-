@@ -3,7 +3,7 @@ package LikedList;
 import java.util.*;
 
 public class reverseLinkedList {
-    public static void RLL(LinkedList m) {
+    public static void RLL(LinkedList<Integer> m) {
         for (int i = m.size() - 1; i >= 0; i--) {
             System.out.println(m.get(i));
         }
@@ -30,5 +30,6 @@ public class reverseLinkedList {
         }
 
         RLL(ll);
+        sc.close();
     }
 }
