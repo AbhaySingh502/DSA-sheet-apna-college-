@@ -53,6 +53,7 @@ public class subtree {
          * 2 3
          * / \ / \
          * 4 5 6 7
+         * 1
          */
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
