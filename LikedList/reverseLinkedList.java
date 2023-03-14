@@ -1,4 +1,3 @@
-package LikedList;
 
 import java.util.*;
 

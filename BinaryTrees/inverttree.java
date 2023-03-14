@@ -1,8 +1,5 @@
 package BinaryTrees;
 
-import java.util.ArrayList;
-import java.util.Queue;
-
 public class inverttree {
     static class TreeNode {
         int val;
@@ -25,7 +22,7 @@ public class inverttree {
 
     public static TreeNode invertTree(TreeNode root) {
         if (root == null) {
-            return new TreeNode(0);
+            return null;
         }
         TreeNode lefTreeNode = invertTree(root.right);
         TreeNode rightTreeNode = invertTree(root.left);
