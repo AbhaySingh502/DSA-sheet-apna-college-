@@ -1,4 +1,3 @@
-package BinaryTrees;
 
 public class inverttree {
     static class TreeNode {
@@ -26,7 +25,6 @@ public class inverttree {
         }
         TreeNode lefTreeNode = invertTree(root.right);
         TreeNode rightTreeNode = invertTree(root.left);
-
         return new TreeNode(root.val, lefTreeNode, rightTreeNode);
 
     }
@@ -46,10 +44,6 @@ public class inverttree {
         root.left.right = new TreeNode(5);
         root.right.left = new TreeNode(6);
         root.right.right = new TreeNode(7);
-
-        System.out.println(invertTree(root).val);
-        System.out.println(invertTree(root).left.val);
-        System.out.println(invertTree(root).right.val);
 
     }
 }
