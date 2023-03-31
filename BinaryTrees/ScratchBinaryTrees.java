@@ -1,4 +1,3 @@
-package BinaryTrees;
 
 public class ScratchBinaryTrees {
     static class Node {
@@ -94,6 +93,12 @@ public class ScratchBinaryTrees {
         int fianalheight = Math.max(lf.ht, rf.ht) + 1;
 
         return new Info(finaldiameter, fianalheight);
+    }
+
+    public static int diameter(Node root) {
+        Info root1 = diameter2(root);
+
+        return root1.dia;
     }
 
     public static void main(String[] args) {

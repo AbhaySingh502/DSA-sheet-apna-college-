@@ -1,4 +1,3 @@
-package BinaryTrees;
 
 public class subtree {
     static class TreeNode {

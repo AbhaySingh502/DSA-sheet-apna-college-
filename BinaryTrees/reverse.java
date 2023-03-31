@@ -1,4 +1,3 @@
-package BinaryTrees;
 
 public class reverse {
     static class Node {

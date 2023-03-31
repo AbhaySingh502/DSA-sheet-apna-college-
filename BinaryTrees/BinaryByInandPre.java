@@ -2,7 +2,7 @@ public class BinaryByInandPre {
 
     private Node root;
 
-    private class Node {
+    public class Node {
         int data;
         Node left, right;
 

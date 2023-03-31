@@ -1,6 +1,3 @@
-package BinaryTrees;
-
-import java.math.MathContext;
 
 public class MaxDepth {
     static class Node {
