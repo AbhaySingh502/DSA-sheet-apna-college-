@@ -1,4 +1,4 @@
-public class mirrorBSt {
+public class BSTFROMPRE {
     static class Node {
         int data;
         Node left;
@@ -28,35 +28,45 @@ public class mirrorBSt {
         return root;
     }
 
-    public static Node mirror(Node root) {
-        if (root == null) {
+    public static Node pre(int arr[], int start, int end) {
+
+        if (start > end) {
             return null;
         }
-        Node leftls = mirror(root.left);
-        Node rightls = mirror(root.right);
-        root.left = rightls;
-        root.right = leftls;
-        return root;
 
+        Node root = new Node(arr[start]);
+
+        int i;
+        for (i = start; i <= end; i++) {
+            if (arr[i] > root.data) {
+
+                break;
+            }
+        }
+
+        root.left = pre(arr, start + 1, i - 1);
+        root.right = pre(arr, i, end);
+
+        return root;
     }
 
-    public static void inorder(Node root) {
+    public static void postorder(Node root) {
         if (root == null) {
             return;
         }
-        inorder(root.left);
-        System.out.println(root.data + " ");
-        inorder(root.right);
+
+        postorder(root.left);
+        postorder(root.right);
+        System.out.println(root.data);
     }
 
     public static void main(String args[]) {
-        int val[] = { 9, 4, 5, 2, 3, 8, 6, 7, 3, 1 };
-        Node root = null;
+        int val[] = { 40, 30, 35, 80, 100 };
 
-        for (int i = 0; i < val.length; i++) {
-            root = BST(root, val[i]);
-        }
-        // mirror(root);
-        inorder(root);
+        Node root = pre(val, 0, val.length - 1);
+
+        postorder(root);
+
     }
+
 }
